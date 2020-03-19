@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "sparse_store"
+version = "0.1.0"
+description = "Backup sparsely stored configuration files using the command-line"
+authors = ["Brian Vancil <Brian@Vancil.name>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cleo = "^0.7.6"
+PyYAML = "^5.3"
+setuptools = "^46.0.0"
+wrapt = "^1.12.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+poetry = "^1.0.5"
+black = "^19.10b0"
+mypy = "^0.761"
+ptvsd = "^4.3.2"
+pylint = "^2.4.4"
+ipython = "^7.13.0"
+
+[tool.poetry.scripts]
+sparse_store = 'sparse_store:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
